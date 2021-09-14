@@ -1,0 +1,26 @@
+.component{
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+}
+
+input{
+    height: 30px;
+    background-color: rgb(30, 32, 43);
+    border-radius: 3px;
+    color: white;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(145, 233, 142);
+    border-radius: 6px;
+    color: rgb(39, 37, 37);
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 50px;
+}
