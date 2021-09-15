@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default /*App*/pito;
+export default App;
