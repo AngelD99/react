@@ -1,0 +1,32 @@
+.anecdote-container{
+    width: 800px;
+    min-height: 200px;
+    margin: 20px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.comments{
+    width: 60px;
+    height: 150px;
+    border: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.anecdote{
+    width: 700px;
+    min-height: 130px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}

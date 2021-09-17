@@ -1,0 +1,14 @@
+.comments-container{
+    width: 680px;
+    height: fit-content;
+}
+
+.comment{
+    width: 560px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: fit-content;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+}
