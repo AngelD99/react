@@ -10,16 +10,23 @@ export default class Anecdote extends Component {
             <div className="anecdote-container">
                 <div className="comments">
                     <ImFire size="40px" />
+                    {this.props.fire}
                     <blockquote/><blockquote/>
                     <BiCommentDetail onClick={(e)=>{
                         e.preventDefault();
                         this.props.updateCommentsPopup(this.props.commentsPopup);
                         this.props.updateIdComment(this.props.id);
                     }} size="40px"/>
+                    {this.props.comments.length}
                 </div>
                 
                 <div className="anecdote">
-                    {this.props.anecdote}
+                    <div className="user" >
+                        <img style={{marginTop:"10px"}} src={this.props.userPicture} width="30px" height="30px" />
+                        <p style={{marginLeft:"10px"}}>{this.props.userName}</p>
+                    </div>
+                    <br/><br/><br/><br/>
+                    <p style={{marginTop:"0px"}}>{this.props.anecdote}</p>
                 </div>
             </div>
         )

@@ -3,7 +3,7 @@
     height: fit-content;
 }
 
-.comment{
+.comments-c{
     width: 560px;
     margin-top: 10px;
     margin-left: 10px;
@@ -11,4 +11,23 @@
     min-height: 50px;
     display: flex;
     justify-content: center;
+}
+
+.comment{
+    width: 650px;
+    height: fit-content;
+    margin-left: 20px;
+    margin-top: 0px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.separate{
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-top: 10px;
+    text-align: justify;
+    height: 100%;
 }

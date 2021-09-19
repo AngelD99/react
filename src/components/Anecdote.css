@@ -24,9 +24,16 @@
     width: 700px;
     min-height: 130px;
     height: fit-content;
-    padding: 20px;
+    padding-left: 20px;
     border-radius: 5px;
     border: 1px solid white;
     border-radius: 5px;
     color: white;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    float: left;
+    margin-bottom: 0px;
 }

@@ -16,22 +16,62 @@ function App() {
       {
         id:1,
         anecdote:"Me acabo de hechar un pedo",
-        comments: ["jaja yo tambien", "puto el que lo lea"]
+        fire: 4,
+        user:"Karla flores",
+        profilePicture:"/profile.png",
+        comments: [
+          {comment: "jaja yo tambien",
+          user:"Christian Silva Vazquez",
+          profilePicture:"/profile.png"
+          }, 
+          {comment:"puto el que lo lea",
+          user:"Manuel Hurtado Rojas",
+          profilePicture:"/profile.png"  
+          }
+        ]
       },
       {
         id:2,
         anecdote:"El otro día le imperniabilise el techo a mi vieja",
-        comments: ["0: cielos que hombre", "Gracias mi amor"]
+        fire: 10,
+        user:"Oscar Arreola Virrueta",
+        profilePicture:"/profile.png",
+        comments: [
+          {comment:"0: cielos que hombre",
+          user:"Angel Sanchez",
+          profilePicture:"/profile.png"
+          }, 
+          {comment:"Gracias mi amor",
+          user:"Brayan de la Rosa",
+          profilePicture:"/profile.png"
+          }
+        ]
       },
       {
         id:3,
         anecdote:"Un día me enferme del estomago, me acababa de levantar y pensé que estaba solo"
         +" así que me disparé un super pedo tronador, y de pronto recordé que estaba de visita"
         +" en casa de una tía, le eche el pedo a mi primo en toda la cara",
-        comments:["te pasaste de verga primo","Jajaja a mi me pasó algo parecido con mi suegra xD"]
+        fire: 16,
+        user:"jose Zamora Magadan",
+        profilePicture:"/profile.png",
+        comments:[
+          {comment:"te pasaste de verga primo",
+          user:"Bryan Rodriguez Sanchez",
+          profilePicture:"/profile.png"
+          },
+          {comment:"Jajaja a mi me pasó algo parecido con mi suegra xD",
+          user:"Patrick Sanchez Magaña",
+          profilePicture:"/profile.png"
+          }
+        ]
       }
     ]);
 
+  const addAnecdote = (anecdote) =>{
+    setAnecdotes([anecdote, ...anecdotes]);
+  }
+  
   const updateCommentsPopup = (comments) =>{
     setCommentsPopup(!comments);
   }
@@ -45,8 +85,10 @@ function App() {
       <NavBar/>
       <div className="App">
         <Menu/>
+
         <Anecdotes anecdotes={anecdotes} updateCommentsPopup={updateCommentsPopup} 
-        commentsPopup={commenstPopup} updateIdComment={updateIdComment} />
+        commentsPopup={commenstPopup} updateIdComment={updateIdComment} 
+        addAnecdote={addAnecdote} newId={anecdotes.length+1} />
       </div>
       <CommentsPopup commentsPopup={commenstPopup} updateCommentsPopup={updateCommentsPopup}
       idComment={idComment} anecdotes={anecdotes} />
