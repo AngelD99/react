@@ -22,8 +22,8 @@ export default class WriteAnecdote extends Component {
                         id:this.props.newId,
                         anecdote: this.state.text,
                         fire: 0,
-                        user:"Benito Martinez",
-                        profilePicture:"/profile.png",
+                        user:this.props.user.name,
+                        profilePicture:this.props.user.photo,
                         comments: []
                       });
                     this.setState({text:""});

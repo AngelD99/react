@@ -23,6 +23,10 @@
     margin-bottom: 20px;
 }
 
+.button:hover{
+    background-color: rgb(87, 0, 0);
+}
+
 .popup-inner{
     position: relative;
     padding: 30px;
@@ -37,4 +41,29 @@
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+}
+
+.input{
+    width: 250px;
+    height: 30px;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.comment-button{
+    width: 115px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: rgb(50, 206, 89);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(41, 37, 33);
+    margin-bottom: 20px;
+}
+
+.comment-button:hover{
+    background-color: rgb(186, 250, 173);
+    color: black;
 }

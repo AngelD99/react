@@ -8,7 +8,7 @@ export default class Comments extends Component {
     }
 
     render() {
-        return (
+        return this.props.comments.length!==0?(
             <div className="comments-container">
                 <p align="center"> 
                 <div>
@@ -31,6 +31,6 @@ export default class Comments extends Component {
                 </div>
                 </p>
             </div>
-        )
+        ) : ( <h3>No hay comentarios</h3>)
     }
 }

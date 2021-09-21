@@ -19,7 +19,8 @@ export default class CommentsPopup extends Component {
                     <Comments comments={
                         this.props.anecdotes.filter(anec => 
                         anec.id===this.props.idComment)[0].comments} />
-
+                    <input className="input"     placeholder="Escribe un comentario" />
+                    <button className="comment-button">Publicar</button>
                 </div>
             </div>
         ) : ""

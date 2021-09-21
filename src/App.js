@@ -12,6 +12,11 @@ function App() {
 
   const [idComment,setIdComment] = useState();
 
+  const [user, setUser] = useState({
+    name:"Miguel Angel Valdovinos Sanchez",
+    photo:"/profile.png"
+  });
+
   const [anecdotes, setAnecdotes] = useState([
       {
         id:1,
@@ -88,7 +93,7 @@ function App() {
 
         <Anecdotes anecdotes={anecdotes} updateCommentsPopup={updateCommentsPopup} 
         commentsPopup={commenstPopup} updateIdComment={updateIdComment} 
-        addAnecdote={addAnecdote} newId={anecdotes.length+1} />
+        addAnecdote={addAnecdote} user={user} newId={anecdotes.length+1} />
       </div>
       <CommentsPopup commentsPopup={commenstPopup} updateCommentsPopup={updateCommentsPopup}
       idComment={idComment} anecdotes={anecdotes} />

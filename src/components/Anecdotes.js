@@ -12,7 +12,8 @@ export default class Anecdotes extends Component {
     render() {
         return (
             <div className="anecdotes">
-                <WriteAnecdote addAnecdote={this.props.addAnecdote} newId={this.props.newId} />
+                <WriteAnecdote addAnecdote={this.props.addAnecdote} newId={this.props.newId}
+                user={this.props.user} />
                 {this.props.anecdotes.map(anec => {
                     return (<Anecdote anecdote={anec.anecdote} comments={anec.comments} 
                     updateCommentsPopup={this.props.updateCommentsPopup} fire={anec.fire}
