@@ -1,0 +1,9 @@
+.anecdotes{
+    width: 850px;
+    height: fit-content;
+    min-height: 250px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-left: 20px;
+}

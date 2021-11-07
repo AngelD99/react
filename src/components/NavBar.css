@@ -1,0 +1,9 @@
+.NavBar{
+    background-color: black;
+    height: 50px;
+    border-bottom-color: #ffffff; 
+    display: flex;
+    color: white;
+    padding-left: 10px;
+}
+

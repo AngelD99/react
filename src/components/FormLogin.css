@@ -1,0 +1,38 @@
+.container{
+    width: 500px;
+    height: 320px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-top: 200px;
+    margin-left: 150px;
+}
+
+.container2{
+    width: 500px;
+    height: 480px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-top: 130px;
+    margin-left: 150px;
+}
+
+.container>input{
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    background-color: rgb(44, 44, 44);
+    border: 1px solid;
+    color: white;
+    border-radius: 10px;
+}
+.container2>input{
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    background-color: rgb(44, 44, 44);
+    border: 1px solid;
+    color: white;
+    border-radius: 10px;
+}

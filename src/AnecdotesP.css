@@ -1,0 +1,10 @@
+.App {
+    display: flex;
+    justify-content: center;
+  }
+  .App{
+    background-color: rgb(36, 26, 46);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
